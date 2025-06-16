@@ -1,0 +1,24 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host webserver1.stuffandthings.internal:80 was resolved.
+* IPv6: (none)
+* IPv4: 172.16.1.4
+*   Trying 172.16.1.4:80...
+* Connected to webserver1.stuffandthings.internal (172.16.1.4) port 80
+> GET /index.html HTTP/1.1
+> Host: webserver1.stuffandthings.internal
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Type: text/html
+< Date: Sun, 11 May 2025 08:42:15 GMT
+< Etag: W/"68206226-1f"
+< Last-Modified: Sun, 11 May 2025 08:39:02 GMT
+< Server: nginx/1.24.0 (Ubuntu)
+< Transfer-Encoding: chunked
+< 
+{ [31 bytes data]
+100    31    0    31    0     0   1540      0 --:--:-- --:--:-- --:--:--  1631
+* Connection #0 to host webserver1.stuffandthings.internal left intact
+<h1>Hello from webserver1</h1>

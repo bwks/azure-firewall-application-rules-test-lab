@@ -1,0 +1,39 @@
+#cloud-config
+package_update: true
+packages:
+  - nginx
+  - python3-certbot-dns-cloudflare
+  - python3-pip
+
+write_files:
+  - path: /etc/nginx/sites-available/default
+    owner: root:root
+    permissions: '0644'
+    content: |
+      server {
+          listen 80 default_server;
+          server_name _;
+          root /var/www/html;
+          index index.html;
+          location / {
+              try_files $uri $uri/ =404;
+          }
+      }
+
+      server {
+          listen 443 ssl;
+          ssl_certificate /etc/letsencrypt/live/webserver3.stratuslabs.net/fullchain.pem; # managed by Certbot
+          ssl_certificate_key /etc/letsencrypt/live/webserver3.stratuslabs.net/privkey.pem; # managed by Certbot
+          ssl_protocols TLSv1.2 TLSv1.3;
+          ssl_ciphers HIGH:!aNULL:!MD5;
+          root /var/www/html;
+          index index.html;
+          location / {
+              try_files $uri $uri/ =404;
+          }
+      }
+
+runcmd:
+  - mkdir -p /etc/nginx/ssl/
+  - chmod 0600 /etc/nginx/ssl/
+  # - systemctl restart nginx

@@ -1,0 +1,17 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host idontexist.intheether:443 was resolved.
+* IPv6: (none)
+* IPv4: 10.255.255.10
+*   Trying 10.255.255.10:443...
+* Connected to idontexist.intheether (10.255.255.10) port 443
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: /etc/ssl/certs
+* OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to idontexist.intheether:443 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Closing connection
+curl: (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to idontexist.intheether:443 

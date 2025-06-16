@@ -1,0 +1,24 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host webserver3.stratuslabs.net:80 was resolved.
+* IPv6: (none)
+* IPv4: 172.16.3.4
+*   Trying 172.16.3.4:80...
+* Connected to webserver3.stratuslabs.net (172.16.3.4) port 80
+> GET /index.html HTTP/1.1
+> Host: webserver3.stratuslabs.net
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Type: text/html
+< Date: Sun, 11 May 2025 08:44:26 GMT
+< Etag: W/"68206228-1f"
+< Last-Modified: Sun, 11 May 2025 08:39:04 GMT
+< Server: nginx/1.24.0 (Ubuntu)
+< Transfer-Encoding: chunked
+< 
+{ [31 bytes data]
+100    31    0    31    0     0   2308      0 --:--:-- --:--:-- --:--:--  2384
+* Connection #0 to host webserver3.stratuslabs.net left intact
+<h1>Hello from webserver3</h1>

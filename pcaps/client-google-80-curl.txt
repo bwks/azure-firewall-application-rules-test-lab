@@ -1,0 +1,33 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host google.com:80 was resolved.
+* IPv6: 2404:6800:4006:814::200e
+* IPv4: 142.250.66.238
+*   Trying 142.250.66.238:80...
+* Connected to google.com (142.250.66.238) port 80
+> GET / HTTP/1.1
+> Host: google.com
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 301 Moved Permanently
+< Cache-Control: public, max-age=2592000
+< Content-Length: 219
+< Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-AZbmROwOT_FIQKb6XPnZyQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+< Content-Type: text/html; charset=UTF-8
+< Date: Sun, 11 May 2025 08:45:34 GMT
+< Expires: Tue, 10 Jun 2025 08:45:34 GMT
+< Location: http://www.google.com/
+< Server: gws
+< X-Frame-Options: SAMEORIGIN
+< X-Xss-Protection: 0
+< 
+{ [219 bytes data]
+100   219  100   219    0     0   1254      0 --:--:-- --:--:-- --:--:--  1258
+* Connection #0 to host google.com left intact
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>

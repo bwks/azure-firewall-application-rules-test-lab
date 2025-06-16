@@ -1,0 +1,196 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host neverssl.com:443 was resolved.
+* IPv6: 2600:1f13:37c:1400:ba21:7165:5fc7:736e
+* IPv4: 34.223.124.45
+*   Trying 34.223.124.45:443...
+* Connected to neverssl.com (34.223.124.45) port 443
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: /etc/ssl/certs
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [10 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [4967 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
+* ALPN: server did not agree on a protocol. Uses default.
+* Server certificate:
+*  subject: CN=neverssl.com
+*  start date: Aug  7 00:00:00 2024 GMT
+*  expire date: Sep  6 23:59:59 2025 GMT
+*  subjectAltName: host "neverssl.com" matched cert's "neverssl.com"
+*  issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M02
+*  SSL certificate verify ok.
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+* using HTTP/1.x
+} [5 bytes data]
+> GET / HTTP/1.1
+> Host: neverssl.com
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [124 bytes data]
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0< HTTP/1.1 200 OK
+< Date: Sun, 11 May 2025 08:50:34 GMT
+< Server: Apache/2.4.62 ()
+< Upgrade: h2,h2c
+< Connection: Upgrade
+< Last-Modified: Wed, 29 Jun 2022 00:23:33 GMT
+< ETag: "f79-5e28b29d38e93"
+< Accept-Ranges: bytes
+< Content-Length: 3961
+< Vary: Accept-Encoding
+< Content-Type: text/html; charset=UTF-8
+< 
+{ [3961 bytes data]
+100  3961  100  3961    0     0   2451      0  0:00:01  0:00:01 --:--:--  2452
+* Connection #0 to host neverssl.com left intact
+<html>
+	<head>
+		<title>NeverSSL - Connecting ... </title>
+		<style>
+		body {
+			font-family: Montserrat, helvetica, arial, sans-serif;
+			font-size: 16x;
+			color: #444444;
+			margin: 0;
+		}
+		h2 {
+			font-weight: 700;
+			font-size: 1.6em;
+			margin-top: 30px;
+		}
+		p {
+			line-height: 1.6em;
+		}
+		.container {
+			max-width: 650px;
+			margin: 20px auto 20px auto;
+			padding-left: 15px;
+			padding-right: 15px
+		}
+		.header {
+			background-color: #42C0FD;
+			color: #FFFFFF;
+			padding: 10px 0 10px 0;
+			font-size: 2.2em;
+		}
+		.notice {
+			background-color: red;
+			color: white;
+			padding: 10px 0 10px 0;
+			font-size: 1.25em;
+			animation: flash 4s infinite;
+		}
+		@keyframes flash {
+		0% {
+			background-color: red;
+		}
+		50% {
+			background-color: #AA0000;
+		}
+		0% {
+			background-color: red;
+		}
+		}
+		<!-- CSS from Mark Webster https://gist.github.com/markcwebster/9bdf30655cdd5279bad13993ac87c85d -->
+		</style>
+
+		<script>
+			var adjectives = [ 'cool' , 'calm' , 'relaxed', 'soothing', 'serene', 'slow',
+							'beautiful', 'wonderful', 'wonderous', 'fun', 'good',
+							'glowing', 'inner', 'grand', 'majestic', 'astounding',
+							'fine', 'splendid', 'transcendent', 'sublime', 'whole',
+							'unique', 'old', 'young', 'fresh', 'clear', 'shiny',
+							'shining', 'lush', 'quiet', 'bright', 'silver' ];
+
+			var nouns =	  [ 'day', 'dawn', 'peace', 'smile', 'love', 'zen', 'laugh',
+							'yawn', 'poem', 'song', 'joke', 'verse', 'kiss', 'sunrise',
+							'sunset', 'eclipse', 'moon', 'rainbow', 'rain', 'plan',
+							'play', 'chart', 'birds', 'stars', 'pathway', 'secret',
+							'treasure', 'melody', 'magic', 'spell', 'light', 'morning'];
+
+			var prefix =
+					// Choose 3 zen adjectives
+					adjectives.sort(function(){return 0.5-Math.random()}).slice(-3).join('')
+					+
+					// Coupled with a zen noun
+					nouns.sort(function(){return 0.5-Math.random()}).slice(-1).join('');
+			window.location.href = 'http://' + prefix + '.neverssl.com/online';
+		</script>
+	</head>
+	<body>
+	<noscript>
+		<div class="notice">
+			<div class="container">
+				⚠️ JavaScript appears to be disabled. NeverSSL's cache-busting works better if you enable JavaScript for <code>neverssl.com</code>.
+			</div>
+		</div>
+	</noscript>
+	<div class="header">
+		<div class="container">
+		<h1>NeverSSL</h1>
+		</div>
+	</div>
+	<div class="content">
+	<div class="container">
+
+	<h1 id="status"></h1>
+	<script>document.querySelector("#status").textContent = "Connecting ...";</script>
+	<noscript>
+
+		<h2>What?</h2>
+		<p>This website is for when you try to open Facebook, Google, Amazon, etc
+		on a wifi network, and nothing happens. Type "http://neverssl.com"
+		into your browser's url bar, and you'll be able to log on.</p>
+
+		<h2>How?</h2>
+		<p>neverssl.com will never use SSL (also known as TLS). No
+		encryption, no strong authentication, no <a
+		href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">HSTS</a>,
+		no HTTP/2.0, just plain old unencrypted HTTP and forever stuck in the dark
+		ages of internet security.</p>
+
+		<h2>Why?</h2>
+		<p>Normally, that's a bad idea. You should always use SSL and secure
+		encryption when possible. In fact, it's such a bad idea that most websites
+		are now using https by default.</p>
+
+		<p>And that's great, but it also means that if you're relying on
+		poorly-behaved wifi networks, it can be hard to get online.  Secure
+		browsers and websites using https make it impossible for those wifi
+		networks to send you to a login or payment page. Basically, those networks
+		can't tap into your connection just like attackers can't. Modern browsers
+		are so good that they can remember when a website supports encryption and
+		even if you type in the website name, they'll use https.</p>
+
+		<p>And if the network never redirects you to this page, well as you can
+		see, you're not missing much.</p>
+
+        <a href="https://twitter.com/neverssl">Follow @neverssl</a>
+
+	</noscript>
+
+	</div>
+	</div>
+
+	</body>
+</html>

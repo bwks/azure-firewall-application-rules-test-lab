@@ -1,0 +1,21 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host idontexist.intheether:80 was resolved.
+* IPv6: (none)
+* IPv4: 10.255.255.10
+*   Trying 10.255.255.10:80...
+* Connected to idontexist.intheether (10.255.255.10) port 80
+> GET / HTTP/1.1
+> Host: idontexist.intheether
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 500 Internal Server Error
+< Date: Sun, 11 May 2025 08:48:35 GMT
+< Content-Length: 48
+< Content-Type: text/plain; charset=utf-8
+< 
+{ [48 bytes data]
+100    48  100    48    0     0   4864      0 --:--:-- --:--:-- --:--:--  5333
+* Connection #0 to host idontexist.intheether left intact
+Action: Deny. Reason: Failed to resolve address.

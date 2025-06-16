@@ -25,13 +25,9 @@ TF_VAR_local_public_ip # Used to restrict access to your local public IP in Azur
 terraform apply
 
 # Get FIREWALL_PIP from output to use in next step
-
-cd certs/
-FIREWALL_PIP="x.x.x.x" ./deploy.sh
 ```
 
 ### Configure VMs
 ```
-cd certs/
 FIREWALL_PIP="x.x.x.x" ./deploy.sh
 ```

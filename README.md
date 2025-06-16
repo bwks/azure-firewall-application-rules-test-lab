@@ -22,7 +22,6 @@ TF_VAR_local_public_ip # Used to restrict access to your local public IP in Azur
 
 ### Deploy Azure Resources
 ```
-cd ..
 terraform apply
 
 # Get FIREWALL_PIP from output to use in next step

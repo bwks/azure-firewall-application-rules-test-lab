@@ -17,7 +17,6 @@ TF_VAR_local_public_ip # Used to restrict access to your local public IP in Azur
 
 ### Generate Certificates
 ```
-cd certs/
 ./certs.sh
 ```
 
